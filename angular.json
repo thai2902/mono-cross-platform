@@ -58,6 +58,17 @@
           }
         }
       }
+    },
+    "ionic-ezcall": {
+      "root": "apps/ionic-ezcall/",
+      "sourceRoot": "apps/ionic-ezcall/src",
+      "projectType": "application",
+      "prefix": "ez",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

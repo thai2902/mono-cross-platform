@@ -1,0 +1,37 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "baseUrl": "./",
+    "paths": {
+        "@nx-workspace/*": [
+          "../../../libs/*"
+        ],
+        "@nx-workspace/ionic": [
+          "../../../xplat/ionic/index.ts"
+        ],
+        "@nx-workspace/ionic/*": [
+          "../../../xplat/ionic/*"
+        ],
+        "@nx-workspace/web": [
+          "../../../xplat/web/index.ts"
+        ],
+        "@nx-workspace/web/*": [
+          "../../../xplat/web/*"
+        ]
+    }
+  },
+  "files": [
+    "test.ts"
+  ],
+  "include": [
+    "polyfills.ts",
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
