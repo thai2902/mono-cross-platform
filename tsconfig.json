@@ -16,6 +16,15 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@nx-workspace/*": [
+        "libs/*"
+      ],
+      "@nx-workspace/ionic": [
+        "xplat/ionic/index.ts"
+      ],
+      "@nx-workspace/ionic/*": [
+        "xplat/ionic/*"
+      ]
     }
   },
   "exclude": [
