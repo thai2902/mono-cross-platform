@@ -33,7 +33,8 @@
     "open.ionic.ezcall.android": "cd apps/ionic-ezcall && npm run cap.android",
     "sync.ionic.ezcall": "cd apps/ionic-ezcall && npm run cap.copy",
     "start.ionic.ezcall": "cd apps/ionic-ezcall && npm start",
-    "clean.ionic.ezcall": "cd apps/ionic-ezcall && npx rimraf -- hooks node_modules platforms www plugins ios android package-lock.json && npm i && rimraf -- package-lock.json"
+    "clean.ionic.ezcall": "cd apps/ionic-ezcall && npx rimraf -- hooks node_modules platforms www plugins ios android package-lock.json && npm i && rimraf -- package-lock.json",
+    "start.admin": "electron ./node_modules/@nstudio/schematics/admin"
   },
   "private": true,
   "dependencies": {
@@ -83,6 +84,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
+    "electron": "^2.0.6",
     "jasmine-core": "~2.99.1",
     "jasmine-marbles": "0.3.1",
     "jasmine-spec-reporter": "~4.2.1",
